@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="IMAGENS/ch-icone.ico" type="image/x-icon">
+        <title>Fale Conosco - Charme</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+<!-- 1. MENU PRINCIPAL E NAV -->
+    <body>
+        <header>
+            <nav class="menu-principal">
+                <ul class="menu">
+                    <li><a href="index.html" title="Página Inicial">INÍCIO</a></li>
+                    <li><a href="peças.html" title="Catálogo">PEÇAS ÚNICAS</a></li>
+                    <li><a href="imagens.html" title="Galeria">GALERIA DE FOFURAS</a></li>
+                    <li><a href="links.html" title="Links Úteis">LINKS</a></li>
+                    <li><a href="fale_conosco.html" title="Contatos">FALE CONOSCO</a></li>
+                </ul>
+<!-- 2. LOGO DA UNIUBE -->
+                <a href="https://www.uniube.br" target="_blank" class="logo-uniube"><img src="IMAGENS/logo-uniube.svg" title="Visite a Uniube" width="100"></a>
+            </nav>
+        </header>
+<!--AQUI FICA O CONTATO VIA WHATSAPP-->
+        <main>
+        <article>
+            <h3>Gostaria de fazer uma encomenda?</h3>
+            <p>Para um atendimento mais rápido e focado no seu pet, nós centralizamos todas as nossas <strong>encomendas sob medida e vendas exclusivas pelo WhatsApp</strong>!</p>
+            <p>Clique no link abaixo para falar diretamente com a gente e fazer o seu pedido:</p>
+                        
+            <a href="https://wa.me/553184144388?text=Olá! Gostaria de conversar sobre uma encomenda sob medida para o meu pet." target="_blank">
+                <strong>ENCOMENDAR PELO WHATSAPP</strong>
+            </a>
+        </article>
+
+            <h3>Outras dúvidas? Mande um e-mail!</h3>
+            <p>Se você tem dúvidas sobre parcerias, sugestões ou outros assuntos, preencha o formulário abaixo:</p>
+
+<!--AQUI FICA O FURMULÁRIO-->
+        <section>
+            <h2>Fale com a Charme</h2>
+            <p>Tem alguma dúvida ou quer uma peça sob medida? Mande uma mensagem para nós!</p>
+
+            <form>
+                
+                <label for="nome">Seu Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Nome e Sobrenome">
+                <br><br>
+
+                <label for="email">Seu E-mail:</label><br>
+                <input type="text" id="email" name="email" placeholder="Seu melhor e-mail">
+                <p> Retornaremos o contato pelo e-mail cadastrado. <p>
+                <br>
+
+                <label>Quem vai usar a roupinha?</label><br>
+                <input type="radio" id="cachorro" name="pet" value="Cachorro">
+                <label for="cachorro">Cachorrinho 🐶</label>
+                
+                <input type="radio" id="gato" name="pet" value="Gato">
+                <label for="gato">Gatinho 🐱</label>
+
+                <input type="radio" id="outropet" name="outropet" value="outropet">
+                <label for="gato">Outro 🐹</label>
+                <br><br>
+
+                <label for="assunto">Qual o assunto da mensagem?</label><br>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Dúvida sobre medidas</option>
+                    <option value="encomenda">Encomenda de grande quantidade</option>
+                    <option value="elogio">Elogio / Sugestão</option>
+                    <option value="outros">Outros assuntos</option>
+                </select>
+                <br><br>
+
+                <label for="mensagem">Sua mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva todos os detalhes aqui..."></textarea>
+                <br><br>
+
+                <button type="submit">Enviar Mensagem 💌</button>
+
+            </form>
+        </section>
+        </main>
+
+<!-- 8. RODAPÉ IMAGEM -->
+        <footer class="rodape-site">
+            <img src="IMAGENS/faixa-rodape.png" alt="Faixa decorativa" class="img-faixa">
+<!-- 9. RODAPÉ DESCRIÇÃO -->
+            <div class="creditos">
+                <p>© 2025 Ateliê Charme Pet in Fashion. Todos os direitos reservados.
+                <br>Este site foi desenvolvido como atividade acadêmica por Iara Guimarães de Freitas
+                <br>(RA: 1225362) para a Uniube. A marca "Charme Pet in Fashion" é real e de propriedade da autora.</p>
+            </div>
+        </footer>
+    </body>
+</html>

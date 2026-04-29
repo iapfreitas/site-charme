@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/* ⊹₊˚‧︵‿₊୨ 𝐏𝐀𝐃𝐑𝐎𝐍𝐈𝐙𝐀𝐂̧𝐀̃𝐎 𝐃𝐀 𝐑𝐀𝐈𝐙 ୧₊‿︵‧˚₊⊹*/
+:root {
+    --amarelinho: #FFF9D9;
+    --rosa-charme: #F5999A;
+    --marrom-charme: #A67142;
+    --marrom-escuro: #2b1400;
+}
+
+/* O Seletor Universal (*) Aplica as regras abaixo em todos os elementos da página, sem exceção (body, div, h1, p, etc). */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--amarelinho);
+    color: var(--marrom-escuro);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none; /* Tira o sublinhado dos links */
+    color: black;
+}
+
+/* ⊹₊˚‧︵‿₊୨ 𝐈𝐍𝐃𝐄𝐗 ୧₊‿︵‧˚₊⊹*/
+
+/* (づ˶•༝•˶)づ♡ 𝑯𝑬𝑨𝑫𝑬𝑹 */
+
+/* (づ˶•༝•˶)づ♡ 1. 𝑴𝑬𝑵𝑼 𝑷𝑹𝑰𝑵𝑪𝑰𝑷𝑨𝑳 𝑬 𝑵𝑨𝑽*/
+.me nu-principal {
+    display: flex;
+    justify-content: space-between; /* Afasta o menu da logo da uniube */
+    align-items: center;
+    padding: 30px 50px;
+    white-space: nowrap;
+}
+
+.menu {
+    list-style: none; /* Tira as bolinhas pretas */
+    display: flex;    /* Coloca os itens um ao lado do outro */
+    gap: 30px;        /* Espaço entre os links */
+    
+}
+
+.menu a {
+    color: var(--marrom-charme);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* (づ˶•༝•˶)づ♡ 2. 𝑳𝑶𝑮𝑶 𝑫𝑨 𝑼𝑵𝑰𝑼𝑩𝑬*/
+
+
+/* (づ˶•༝•˶)づ♡ 3. 𝑯𝑬𝑹𝑶 - 𝑳𝑶𝑮𝑶 𝑮𝑹𝑨𝑵𝑫𝑬 */
+.hero {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.hero img {
+    max-width: 350px;
+}
+
+/* (づ˶•༝•˶)づ♡ 𝑴𝑨𝑰𝑵 */
+
+/* (づ˶•༝•˶)づ♡ 4. 𝑫𝑬𝑺𝑻𝑨𝑸𝑼𝑬𝑺 𝑫𝑨 𝑺𝑬𝑴𝑨𝑵𝑨 */
+
+/* arte de bordinha rosa */
+.onda{
+    width: 100%; /* Faz a faixa esticar de ponta a ponta */
+    display: block;
+}
+
+/* (づ˶•༝•˶)づ♡ 5. 𝑪𝑨𝑹𝑫𝑺 𝑫𝑨𝑺 3 𝑭𝑶𝑻𝑶𝑺 */
+.destaques {
+    background: linear-gradient(to bottom, var(--rosa-charme) 0%, var(--rosa-charme) 40%, transparent 40%);
+    padding: 20px 50px 0px 50px;
+}
+
+.titulo-destaques {
+    text-align: center;
+    color: var(--amarelinho);
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.destaque-produtos {
+    display: flex;
+    
+    justify-content: center;
+    gap: 30px; /* Espaço entre os cartões */
+}
+
+.cards {
+    background-color: var(--amarelinho);
+    border-radius: 18px; /* Bordas arredondadas da caixa branca */
+    padding: 10px;
+    width: 320px;
+    white-space: nowrap;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 10px; /* Bordas arredondadas da foto */
+    margin-bottom: 15px;
+}
+
+.cards h3 {
+    font-family: 'Young Serif', serif;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cartao p {
+    color: black;
+    font-size: 18px;
+}
+
+/* (づ˶•༝•˶)づ♡ 𝑹𝑶𝑫𝑨𝑷𝑬́ */
+
+.rodape-site {
+    background-color: var(--marrom-charme);
+    color: var(--amarelinho);
+    text-align: left;
+    margin-top: 40px;
+}
+
+.img-faixa {
+    width: 100%; /* Faz a faixa esticar de ponta a ponta */
+    display: block;
+}
+
+.creditos {
+    padding: 30px;
+}
+
+.creditos p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--amarelinho);
+}
+
+/* (づ˶•༝•˶)づ♡ 𝑨𝑺𝑰𝑫𝑬 */
+
+.rodape-destaques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    position: relative;
+}
+
+.botao-medida {
+    background-color: var(--rosa-charme);
+    color: var(--amarelinho);
+    font-family: 'Young Serif', serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 25px;
+    border-radius: 40px 0 0 40px; /* Borda arredondada só do lado esquerdo */
+    position: absolute; /* Faz o botão "flutuar" colado na borda direita */
+    right: 0;
+}
+
+.botao-medida img {
+    width: 40px;
+}
+
+.como-medida{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* ⊹₊˚‧︵‿₊୨ 𝐏𝐄𝐂̧𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
+
+
+/* ⊹₊˚‧︵‿₊୨ 𝐋𝐈𝐍𝐊𝐒 ୧₊‿︵‧˚₊⊹*/
+/* ⊹₊˚‧︵‿₊୨ 𝐌𝐄𝐃𝐈𝐃𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
+/* ⊹₊˚‧︵‿₊୨ 𝐅𝐀𝐋𝐄 𝐂𝐎𝐍𝐎𝐒𝐂𝐎 ୧₊‿︵‧˚₊⊹*/
+/* ⊹₊˚‧︵‿₊୨ 𝐈𝐌𝐀𝐆𝐄𝐍𝐒 ୧₊‿︵‧˚₊⊹*/
