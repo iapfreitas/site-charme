@@ -6,6 +6,10 @@
     --rosa-charme: #F5999A;
     --marrom-charme: #A67142;
     --marrom-escuro: #2b1400;
+    --azul-charme: #91D8F7;
+
+    --font-padrao:'Montserrat', sans-serif;
+    --font-destaque: 'Young Serif', serif;
 }
 
 /* O Seletor Universal (*) Aplica as regras abaixo em todos os elementos da página, sem exceção (body, div, h1, p, etc). */
@@ -18,7 +22,7 @@
 body {
     background-color: var(--amarelinho);
     color: var(--marrom-escuro);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-padrao)
 }
 
 a {
@@ -31,7 +35,7 @@ a {
 /* (づ˶•༝•˶)づ♡ 𝑯𝑬𝑨𝑫𝑬𝑹 */
 
 /* (づ˶•༝•˶)づ♡ 1. 𝑴𝑬𝑵𝑼 𝑷𝑹𝑰𝑵𝑪𝑰𝑷𝑨𝑳 𝑬 𝑵𝑨𝑽*/
-.me nu-principal {
+.menu-principal {
     display: flex;
     justify-content: space-between; /* Afasta o menu da logo da uniube */
     align-items: center;
@@ -84,7 +88,7 @@ a {
 .titulo-destaques {
     text-align: center;
     color: var(--amarelinho);
-    font-family: 'Young Serif', serif;
+    font-family: var(--font-destaque);
     font-size: 28px;
     margin-bottom: 40px;
 }
@@ -111,7 +115,7 @@ a {
 }
 
 .cards h3 {
-    font-family: 'Young Serif', serif;
+    font-family: var(--font-destaque);
     color: black;
     font-size: 18px;
     margin-bottom: 5px;
@@ -128,14 +132,14 @@ a {
     background-color: var(--marrom-charme);
     color: var(--amarelinho);
     text-align: left;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .img-faixa {
-    width: 100%; /* Faz a faixa esticar de ponta a ponta */
     display: block;
+    width: 100%;
+    margin: 0;
 }
-
 .creditos {
     padding: 30px;
 }
@@ -159,7 +163,7 @@ a {
 .botao-medida {
     background-color: var(--rosa-charme);
     color: var(--amarelinho);
-    font-family: 'Young Serif', serif;
+    font-family: var(--font-destaque);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -181,7 +185,132 @@ a {
 /* ⊹₊˚‧︵‿₊୨ 𝐏𝐄𝐂̧𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
 
 
+
 /* ⊹₊˚‧︵‿₊୨ 𝐋𝐈𝐍𝐊𝐒 ୧₊‿︵‧˚₊⊹*/
+
+
+
 /* ⊹₊˚‧︵‿₊୨ 𝐌𝐄𝐃𝐈𝐃𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
+
+
+/* SECCÃO 1: INTRODUÇÃO */
+.medidas-intro {
+    display: flex;
+    justify-content: space-around; /* Coloca espaço entre o texto e a imagem */
+    align-items: center; /* Alinha ambos ao centro verticalmente */
+    padding: 60px 10%;
+}
+
+.titulo-medidas {
+    font-family: var(--font-destaque);
+    color: var(--rosa-charme);
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.img-cachorro-fita {
+    width: 350px;
+}
+
+/* TÍTULOS GERAIS DAS SECÇÕES */
+.titulo-seccao {
+    font-family: var(--font-destaque);
+    color: var(--marrom-escuro);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* SECCÃO 2: ESSENCIAL (Fundo Azul) */
+.medidas-essencial {
+    background-color: var(--azul-charme);
+    padding: 60px 10%;
+}
+
+.conteudo-essencial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Distância entre o cãozinho e o texto */
+}
+
+.img-esquema {
+    width: 350px;
+}
+
+.textos-essenciais {
+    max-width: 600px; /* Limita a largura do texto para não ficar muito esticado */
+}
+
+.textos-essenciais p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.textos-essenciais ul {
+    list-style: none; /* Remove as marcas de lista padrão */
+}
+
+.textos-essenciais li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px; /* Espaço entre a letra e o texto */
+}
+
+.textos-essenciais li strong {
+    background-color: var(--amarelinho); /* Faz a bolinha amarela para a letra A, B, C */
+    color: var(--marrom-escuro);
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Torna-o redondo */
+    flex-shrink: 0; /* Impede que a bolinha amasse se o texto for longo */
+}
+
+/* SECCÃO 3: TABELA (Fundo Rosa) */
+.medidas-tabela-sec {
+    background-color: var(--rosa-charme);
+    padding: 60px 10% 60px 10%; /* só reduz o espaço de baixo */
+    text-align: center;
+}
+
+.tabela-medidas {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabela-medidas th,
+.tabela-medidas td {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.medidas-tabela-sec,
+.titulo-seccao {
+    margin-bottom: 15px;
+}
+
+.tabela-head {
+    background-color: var(--azul-charme);
+}
+
+.tr-impar{
+    background-color: white;
+}
+
+.tr-par{
+    background-color: rgb(231, 231, 231);
+}
 /* ⊹₊˚‧︵‿₊୨ 𝐅𝐀𝐋𝐄 𝐂𝐎𝐍𝐎𝐒𝐂𝐎 ୧₊‿︵‧˚₊⊹*/
 /* ⊹₊˚‧︵‿₊୨ 𝐈𝐌𝐀𝐆𝐄𝐍𝐒 ୧₊‿︵‧˚₊⊹*/
