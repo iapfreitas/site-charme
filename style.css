@@ -139,6 +139,7 @@ a {
     display: block;
     width: 100%;
     margin: 0;
+    margin-bottom: 0;
 }
 .creditos {
     padding: 30px;
@@ -193,12 +194,12 @@ a {
 /* ⊹₊˚‧︵‿₊୨ 𝐌𝐄𝐃𝐈𝐃𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
 
 
-/* SECCÃO 1: INTRODUÇÃO */
+/* (づ˶•༝•˶)づ♡ 1: INTRODUÇÃO */
 .medidas-intro {
     display: flex;
     justify-content: space-around; /* Coloca espaço entre o texto e a imagem */
     align-items: center; /* Alinha ambos ao centro verticalmente */
-    padding: 60px 10%;
+    padding: 60px 10% 0;
 }
 
 .titulo-medidas {
@@ -210,9 +211,10 @@ a {
 
 .img-pet-fita {
     width: 350px;
+    align-self: flex-end;
 }
 
-/* TÍTULOS GERAIS DAS SECÇÕES */
+/* (づ˶•༝•˶)づ♡TÍTULOS GERAIS DAS SECÇÕES */
 .titulo-seccao {
     font-family: var(--font-destaque);
     color: var(--marrom-escuro);
@@ -222,7 +224,7 @@ a {
     letter-spacing: 1px;
 }
 
-/* SECCÃO 2: ESSENCIAL (Fundo Azul) */
+/* (づ˶•༝•˶)づ♡ 2: ESSENCIAL (Fundo Azul) */
 .medidas-essencial {
     background-color: var(--azul-charme);
     padding: 60px 10%;
@@ -235,7 +237,7 @@ a {
     gap: 50px; /* Distância entre o cãozinho e o texto */
 }
 
-.img-esquema {
+.img-cao-medida {
     width: 350px;
 }
 
@@ -276,12 +278,16 @@ a {
     font-weight: bold;
 }
 
-
-/* SECCÃO 3: TABELA (Fundo Rosa) */
+/* (づ˶•༝•˶)づ♡ 3: TABELA (Fundo Rosa) */
 .medidas-tabela-sec {
     background-color: var(--rosa-charme);
     padding: 60px 10% 60px 10%; /* só reduz o espaço de baixo */
     text-align: center;
+    margin-bottom: 0;
+}
+
+.titulo-seccao{
+    margin-bottom: 15px; /* Aumenta o espaço entre o título e a tabela */
 }
 
 .tabela-medidas {
@@ -300,11 +306,6 @@ a {
     font-size: 14px;
 }
 
-.medidas-tabela-sec,
-.titulo-seccao {
-    margin-bottom: 15px;
-}
-
 .tabela-head {
     background-color: var(--azul-charme);
 }
@@ -316,5 +317,7 @@ a {
 .tr-par{
     background-color: rgb(231, 231, 231);
 }
+
+
 /* ⊹₊˚‧︵‿₊୨ 𝐅𝐀𝐋𝐄 𝐂𝐎𝐍𝐎𝐒𝐂𝐎 ୧₊‿︵‧˚₊⊹*/
 /* ⊹₊˚‧︵‿₊୨ 𝐈𝐌𝐀𝐆𝐄𝐍𝐒 ୧₊‿︵‧˚₊⊹*/
