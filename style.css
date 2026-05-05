@@ -24,9 +24,9 @@
     width: 500px;          /* Define o comprimento da linha */
     height: 1px;
     background-color: var(--marrom-charme);
-    margin: 10px auto;    /* O "auto" centraliza a linha */
+    margin: 15px auto 30px; /* apenas uma declaração */
     border: none;
-    margin: 15px auto 30px; /* Aumenta o espaço entre o título e o texto, e entre o texto e os cards */
+
 }
 
 body {
@@ -83,16 +83,17 @@ a {
 
 /* (づ˶•༝•˶)づ♡ 4. 𝑫𝑬𝑺𝑻𝑨𝑸𝑼𝑬𝑺 𝑫𝑨 𝑺𝑬𝑴𝑨𝑵𝑨 */
 
-/* arte de bordinha rosa */
+/* arte de bordinha bege */
 .onda{
     width: 100%; /* Faz a faixa esticar de ponta a ponta */
     display: block;
+    object-fit: fill
 }
 
 /* (づ˶•༝•˶)づ♡ 5. 𝑪𝑨𝑹𝑫𝑺 𝑫𝑨𝑺 3 𝑭𝑶𝑻𝑶𝑺 */
 .destaques {
-    background: linear-gradient(to bottom, var(--rosa-charme) 0%, var(--rosa-charme) 40%, transparent 40%);
-    padding: 20px 50px 0px 50px;
+    background: var(--rosa-charme);
+    padding-bottom: 30px;
 }
 
 .titulo-destaques {
@@ -100,7 +101,8 @@ a {
     color: var(--amarelinho);
     font-family: var(--font-destaque);
     font-size: 28px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .destaque-produtos {
@@ -111,10 +113,15 @@ a {
 
 .cards {
     background-color: var(--amarelinho);
-    border-radius: 18px; /* Bordas arredondadas da caixa branca */
+    border-radius: 18px; /* Bordas arredondadas da caixa amarelinha */
     padding: 10px;
     width: 320px;
     white-space: nowrap;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
 }
 
 .cards img {
@@ -192,120 +199,7 @@ a {
     line-height: 1.2;
 }
 
-/* ⊹₊˚‧︵‿₊୨ 𝐏𝐄𝐂̧𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
-
-/* (づ˶•༝•˶)づ♡ 1: GRADE DE PRODUTOS */
-
-.titulo-pecas {
-    font-family: var(--font-destaque);
-    color: var(--marrom-charme);
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.text-pecas {
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.produtos-section {
-    padding: 40px 50%;
-    background-color: var(--marrom-charme);
-}
-
-.produtos-grid {
-    color: var(--amarelinho);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-}
-
-.produtos-card{
-    background: white;
-    border-radius: 24px;
-    padding: 20px;
-    width: 280px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-    text-align: center;
-}
-
-.produtos-card:hover {
-    transform: translateY(-5px);
-}
-
-.produtos-card img {
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 15px;
-}
-.produtos-card h3 {
-    font-family: var(--font-destaque);
-    color: var(--marrom-escuro);
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.produtos-card p {
-    color: var(--marrom-escuro);
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-.tit-prod {
-    font-family: var(--font-destaque);
-    color: var(--amarelinho);
-    font-size: 25px;
-    margin-top: 2%;
-}
-
-.preco {
-    color: var(--amarelinho);
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.btn-whatsapp {
-    background-color: var(--rosa-charme);
-    color: white;
-    font-family: var(--font-padrao);
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px 16px;
-    border-radius: 40px;
-    display: inline-block;
-    transition: background-color 0.2s;
-}
-
-.btn-whatsapp:hover {
-    background-color: var(--azul-charme); /* Cor de destaque ao passar o mouse */
-}
-
-/* (づ˶•༝•˶)づ♡ 2: INTRO DA PÁGINA */
-
-.intro-pecas {
-    text-align: center;
-    padding: 40px 20px 20px;
-    background-color: var(--amarelinho);
-}
-
-.intro-pecas h1 {
-    font-family: var(--font-destaque);
-    color: var(--rosa-charme);
-    font-size: 32px;
-}
-
-/* ⊹₊˚‧︵‿₊୨ 𝐋𝐈𝐍𝐊𝐒 ୧₊‿︵‧˚₊⊹*/
-
-
-
 /* ⊹₊˚‧︵‿₊୨ 𝐌𝐄𝐃𝐈𝐃𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
-
 
 /* (づ˶•༝•˶)づ♡ 1: INTRODUÇÃO */
 .medidas-intro {
@@ -439,21 +333,122 @@ a {
     background-color: rgb(231, 231, 231);
 }
 
+/* ⊹₊˚‧︵‿₊୨ 𝐏𝐄𝐂̧𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
+
+/* (づ˶•༝•˶)づ♡ 1: TÍTULO PEÇAS ÚNICAS */
+
+.titulo-pecas {
+    font-family: var(--font-destaque);
+    color: var(--marrom-charme);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* (づ˶•༝•˶)づ♡ 2: INTRO DA PÁGINA */
+.text-pecas {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* arte de bordinha bege */
+.onda-pecas {
+    width: 100%; /* Faz a faixa esticar de ponta a ponta */
+    display: block;
+    object-fit: fill
+}
+
+
+/* (づ˶•༝•˶)づ♡ 3: SEÇÃO DE PRODUTOS */
+.produtos-section {
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    background-color: var(--marrom-charme);
+}
+
+.produtos-grid {
+    color: var(--amarelinho);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.produtos-card{
+    background: var(--amarelinho);
+    border-radius: 18px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.produtos-card:hover {
+    transform: translateY(-5px);
+}
+
+.produtos-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tit-prod {
+    font-family: var(--font-destaque);
+    color: var(--marrom-escuro);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.produtos-card p {
+    color: var(--marrom-escuro);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.preco-pecas {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-whatsapp {
+    background-color: var(--rosa-charme);
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 40px;
+    display: inline-block;
+    transition: background-color 0.2s;
+    white-space: nowrap
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--azul-charme); /* Cor de destaque ao passar o mouse */
+}
+
+/* (づ˶•༝•˶)づ♡ 2: INTRO DA PÁGINA */
+
+.intro-pecas {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: var(--amarelinho);
+}
+
+.intro-pecas h1 {
+    font-family: var(--font-destaque);
+    color: var(--rosa-charme);
+    font-size: 32px;
+}
+
 /* ⊹₊˚‧︵‿₊୨ 𝐆𝐀𝐋𝐄𝐑𝐈𝐀 𝐃𝐄 𝐅𝐎𝐅𝐔𝐑𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ⊹₊˚‧︵‿₊୨ 𝐅𝐀𝐋𝐄 𝐂𝐎𝐍𝐎𝐒𝐂𝐎 ୧₊‿︵‧˚₊⊹*/
+/* ⊹₊˚‧︵‿₊୨ 𝐋𝐈𝐍𝐊𝐒 ୧₊‿︵‧˚₊⊹*/
