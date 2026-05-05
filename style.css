@@ -17,6 +17,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: normal;
+}
+
+.linha-estilizada {
+    width: 500px;          /* Define o comprimento da linha */
+    height: 1px;
+    background-color: var(--marrom-charme);
+    margin: 10px auto;    /* O "auto" centraliza a linha */
+    border: none;
+    margin: 15px auto 30px; /* Aumenta o espaço entre o título e o texto, e entre o texto e os cards */
 }
 
 body {
@@ -185,7 +195,111 @@ a {
 
 /* ⊹₊˚‧︵‿₊୨ 𝐏𝐄𝐂̧𝐀𝐒 ୧₊‿︵‧˚₊⊹*/
 
+/* (づ˶•༝•˶)づ♡ 1: GRADE DE PRODUTOS */
 
+.titulo-pecas {
+    font-family: var(--font-destaque);
+    color: var(--marrom-charme);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-pecas {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.produtos-section {
+    padding: 40px 50%;
+    background-color: var(--marrom-charme);
+}
+
+.produtos-grid {
+    color: var(--amarelinho);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.produtos-card{
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.produtos-card:hover {
+    transform: translateY(-5px);
+}
+
+.produtos-card img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+.produtos-card h3 {
+    font-family: var(--font-destaque);
+    color: var(--marrom-escuro);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.produtos-card p {
+    color: var(--marrom-escuro);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.tit-prod {
+    font-family: var(--font-destaque);
+    color: var(--amarelinho);
+    font-size: 25px;
+    margin-top: 2%;
+}
+
+.preco {
+    color: var(--amarelinho);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-whatsapp {
+    background-color: var(--rosa-charme);
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 40px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--azul-charme); /* Cor de destaque ao passar o mouse */
+}
+
+/* (づ˶•༝•˶)づ♡ 2: INTRO DA PÁGINA */
+
+.intro-pecas {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: var(--amarelinho);
+}
+
+.intro-pecas h1 {
+    font-family: var(--font-destaque);
+    color: var(--rosa-charme);
+    font-size: 32px;
+}
 
 /* ⊹₊˚‧︵‿₊୨ 𝐋𝐈𝐍𝐊𝐒 ୧₊‿︵‧˚₊⊹*/
 
@@ -234,7 +348,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; /* Distância entre o cãozinho e o texto */
+    gap: 60px; /* Distância entre o cãozinho e o texto */
 }
 
 .img-cao-medida {
@@ -248,8 +362,16 @@ a {
 .textos-essenciais p {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
+
+.titulo-3medidas {
+    font-family: var(--font-padrao);
+    color: var(--marrom-escuro);
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 .lista-medidas {
     list-style: none;       /* Remove a numeração padrão do <ol> */
@@ -317,7 +439,6 @@ a {
 .tr-par{
     background-color: rgb(231, 231, 231);
 }
-
 
 /* ⊹₊˚‧︵‿₊୨ 𝐅𝐀𝐋𝐄 𝐂𝐎𝐍𝐎𝐒𝐂𝐎 ୧₊‿︵‧˚₊⊹*/
 /* ⊹₊˚‧︵‿₊୨ 𝐈𝐌𝐀𝐆𝐄𝐍𝐒 ୧₊‿︵‧˚₊⊹*/
