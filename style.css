@@ -121,7 +121,7 @@ a {
     margin-bottom: 5px;
 }
 
-.cartao p {
+.cards p {
     color: black;
     font-size: 18px;
 }
@@ -208,7 +208,7 @@ a {
     line-height: 1.3;
 }
 
-.img-cachorro-fita {
+.img-pet-fita {
     width: 350px;
 }
 
@@ -249,29 +249,33 @@ a {
     margin-bottom: 20px;
 }
 
-.textos-essenciais ul {
-    list-style: none; /* Remove as marcas de lista padrão */
+.lista-medidas {
+    list-style: none;       /* Remove a numeração padrão do <ol> */
+    padding-left: 0;        /* Remove o recuo padrão */
 }
 
-.textos-essenciais li {
+.lista-medidas li {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 15px;
     display: flex;
-    gap: 10px; /* Espaço entre a letra e o texto */
+    align-items: flex-start; /* Alinha o topo do círculo com o topo do texto */
+    gap: 10px;
 }
 
-.textos-essenciais li strong {
-    background-color: var(--amarelinho); /* Faz a bolinha amarela para a letra A, B, C */
+.lista-medidas li strong {
+    background-color: var(--amarelinho);
     color: var(--marrom-escuro);
     width: 25px;
     height: 25px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Torna-o redondo */
-    flex-shrink: 0; /* Impede que a bolinha amasse se o texto for longo */
+    border-radius: 50%;
+    flex-shrink: 0;         /* Impede que o círculo amasse */
+    font-weight: bold;
 }
+
 
 /* SECCÃO 3: TABELA (Fundo Rosa) */
 .medidas-tabela-sec {
