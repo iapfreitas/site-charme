@@ -86,8 +86,7 @@ a {
 /* arte de bordinha bege */
 .onda{
     width: 100%; /* Faz a faixa esticar de ponta a ponta */
-    display: block;
-    object-fit: fill
+    display: block;   
 }
 
 /* (づ˶•༝•˶)づ♡ 5. 𝑪𝑨𝑹𝑫𝑺 𝑫𝑨𝑺 3 𝑭𝑶𝑻𝑶𝑺 */
@@ -354,12 +353,12 @@ a {
 }
 
 /* arte de bordinha bege */
-.onda-pecas {
-    width: 100%; /* Faz a faixa esticar de ponta a ponta */
+.produtos-section, .onda-pecas {
+    width: 100%;
     display: block;
-    object-fit: fill
+    object-fit: fill;
+    margin-top: -31px;
 }
-
 
 /* (づ˶•༝•˶)づ♡ 3: SEÇÃO DE PRODUTOS */
 .produtos-section {
@@ -374,7 +373,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    padding: 10px;
+    padding: 40px;
 }
 
 .produtos-card{
